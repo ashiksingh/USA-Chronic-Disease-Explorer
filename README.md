@@ -1,78 +1,48 @@
-\# USA Chronic Disease Explorer
-
-
+# USA Chronic Disease Explorer
 
 An interactive dashboard for exploring U.S. chronic disease data using Python, Streamlit, MongoDB, Pandas, and Plotly.
 
+## Features
 
+- Filter records by health topic, location, year, and data type
+- Search health-related questions and data values
+- Interactive charts and visualizations
+- View filtered records in a table
+- Download displayed records as CSV
+- Explore demographic data and confidence limits
 
-\## Features
+## Tech Stack
 
-\- Filter records by health topic, location, year, and data type
+- Python
+- Streamlit
+- MongoDB
+- PyMongo
+- Pandas
+- Plotly
 
-\- Search health-related questions and data values
+## Database
 
-\- Interactive charts and visualizations
+- Database: `chronicDiseaseDB`
+- Collection: `disease_records`
 
-\- View filtered records in a table
+## How to Run
 
-\- Download displayed records as CSV
+1. Install Python and MongoDB.
+2. Import the required dataset into MongoDB.
+3. Install dependencies:
 
-\- Explore demographic data and confidence limits
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. Run the dashboard:
 
+   ```bash
+   python -m streamlit run app.py
+   ```
 
-\## Tech Stack
+5. Open `http://localhost:8501` in your browser.
 
-\- Python
-
-\- Streamlit
-
-\- MongoDB
-
-\- PyMongo
-
-\- Pandas
-
-\- Plotly
-
-
-
-\## Database
-
-\- Database: chronicDiseaseDB
-
-\- Collection: disease\_records
-
-
-
-\## How to Run
-
-1\. Install Python and MongoDB.
-
-2\. Import the required dataset into MongoDB.
-
-3\. Install dependencies:
-
-
-
-&#x20;  pip install -r requirements.txt
-
-
-
-4\. Run the dashboard:
-
-
-
-&#x20;  python -m streamlit run app.py
-
-
-
-5\. Open http://localhost:8501 in your browser.
-
-
-
-\## Dataset
+## Dataset
 
 The dataset is not included in this repository. Import the required U.S. chronic disease dataset into MongoDB before running the application.
-
